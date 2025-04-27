@@ -39,6 +39,15 @@
       object-fit: cover;
       aspect-ratio: 1;
     }
+    p {
+      font: $logo;
+      color: #d2ac47;
+    }
+    span,
+    span:hover {
+      font: $connect;
+      color: #d2ac47;
+    }
   }
   .ew-menu {
     display: flex;
@@ -78,10 +87,22 @@
       object-fit: cover;
     }
     a {
-      font: $small-title;
       display: flex;
       align-items: center;
+      font-size: 32px;
       gap: 8px;
+      color: #d2ac47;
+      p {
+        font: $logo;
+        font-size: 32px;
+        color: #d2ac47;
+      }
+      span,
+      span:hover {
+        font: $connect;
+        color: #d2ac47;
+        font-size: 32px;
+      }
     }
   }
   main {

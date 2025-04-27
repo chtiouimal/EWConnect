@@ -6,7 +6,7 @@ function NavigationHeader({ menu }) {
     <header className="ew-navigation-header">
       <Link className="ew-logo" to="/">
         <img src={LOGO} alt="east-wind-connect" />
-        EAST WIND Connect
+        <p>EAST WIND</p> <span>Connect</span>
       </Link>
       <ul className="ew-menu">
         {menu.map((item) => (
