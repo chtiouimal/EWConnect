@@ -1,5 +1,3 @@
-import CustomButton from "./CustomButton";
-
 function HeroSection({ data, position = "right", bg = "/hero-1.png" }) {
   return (
     <div
@@ -10,12 +8,13 @@ function HeroSection({ data, position = "right", bg = "/hero-1.png" }) {
       }}
     >
       <div>
-        {data.keyword && <span>{data.keyword}</span>}
-        {/* <h1>
-          Guiding Your Business Toward Lasting <span>Success.</span>
-        </h1> */}
+        {data.keyword && <span className="ew-keyword">{data.keyword}</span>}
         {data.title}
-        {typeof data.text === "string" ? <p>{data.text}</p> : <>{data.text}</>}
+        {typeof data.text === "string" ? (
+          <p className="ew-first-p">{data.text}</p>
+        ) : (
+          <>{data.text}</>
+        )}
         {data.cta && data.cta}
       </div>
     </div>

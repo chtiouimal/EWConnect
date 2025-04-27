@@ -78,12 +78,11 @@ function ContactView() {
           </p>
           <ul className="ew-contact-list">
             <li>
-              <span>Phone number</span>
-              <a>+44 7468183816</a>
+              <span>Email</span>
+              <a>info@eastwindconnect.com</a>
             </li>
             <li>
-              <span>Phone number</span>
-              <a>info@eastwindconnect.com</a>
+              <span>.</span>
               <a>Ines.djibet@china-eastwind.com</a>
             </li>
           </ul>

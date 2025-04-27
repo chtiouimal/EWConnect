@@ -184,8 +184,11 @@ function AboutView() {
           ),
           text: (
             <div style={{ marginLeft: "50%", width: "50%" }}>
-              <span>Our Mission</span>
-              <p style={{ fontSize: 20, marginTop: 22, marginBottom: 32 }}>
+              <span className="ew-keyword">Our Mission</span>
+              <p
+                className="ew-first-p"
+                style={{ fontSize: 20, marginTop: 22, marginBottom: 32 }}
+              >
                 East-Wind Connect is a cross-border advisory firm specializing
                 in connecting Chinese businesses and investors with the GCC's
                 fastest-growing markets. We act as a trusted partner for
@@ -193,8 +196,11 @@ function AboutView() {
                 high-level engagements and unlocking strategic opportunities
                 across both regions.
               </p>
-              <span>Our approach</span>
-              <p style={{ fontSize: 20, marginTop: 22, marginBottom: 100 }}>
+              <span className="ew-keyword">Our approach</span>
+              <p
+                className="ew-second-p"
+                style={{ fontSize: 20, marginTop: 22, marginBottom: 100 }}
+              >
                 As China and the GCC enter a new era of economic cooperation
                 defined by shared ambitions in innovation, infrastructure, and
                 sustainability. East-Wind Connect stands as a trusted partner at
