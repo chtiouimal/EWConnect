@@ -1,0 +1,23 @@
+@import "./styles/variables/colors";
+@import "./styles/variables/fonts";
+
+@import "./styles/globals";
+
+@import "./styles/layout";
+
+@import "./styles/components/hero";
+@import "./styles/components/card";
+@import "./styles/components/form";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $text-dark;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: $bg-white;
+  overflow-x: hidden;
+}

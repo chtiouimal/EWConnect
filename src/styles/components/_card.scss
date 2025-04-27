@@ -1,0 +1,134 @@
+.ew-img-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 389px;
+  width: calc(100% - 32px);
+  padding: 32px;
+  h6,
+  p,
+  span {
+    text-align: center;
+    color: $text-light;
+    max-width: 249px;
+  }
+  h6 {
+    font: $big-text;
+    font-weight: 700;
+  }
+  span {
+    font: $text;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+  p {
+    font: $text;
+    font-size: 14px;
+  }
+  span {
+    color: $primary-color !important;
+  }
+}
+
+.ew-icon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 46px;
+  max-width: 389px;
+  width: calc(100% - 32px);
+  padding: 32px;
+  h6 {
+    font: $extra-small-title;
+  }
+  p {
+    font: $text;
+    font-size: 14px;
+  }
+  span * {
+    color: $primary-color !important;
+  }
+}
+
+.ew-icon-card-2 {
+  border: 1px solid $border-blue-grey-light;
+  border-radius: 20px;
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  h6 {
+    font: $small-text;
+    font-size: 12px;
+  }
+}
+
+.ew-icon-card-bg {
+  border: none !important;
+  background-color: $bg-grey;
+}
+
+.ew-project-card {
+  width: calc(50% - 16px);
+  border-radius: 20px;
+  background-color: $bg-blue-grey;
+  display: flex;
+  gap: 32px;
+  padding: 16px;
+  max-height: 320px;
+  .ew-project-card-img {
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+  .ew-project-card-text {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    & > * {
+      max-width: 290px;
+      width: 100%;
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    span {
+      font: $text;
+      font-weight: 700;
+      color: $accent-light-color;
+    }
+    h4 {
+      font: $extra-small-title;
+    }
+    p {
+      font: $extra-small-text;
+    }
+  }
+}
+
+/* *** grid *** */
+
+.ew-card-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ew-full-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 0 32px;
+}
