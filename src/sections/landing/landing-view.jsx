@@ -116,7 +116,13 @@ function LandingView() {
             </h1>
           ),
           text: "From strategy to execution, we help businesses streamline operations, optimize resources, and scale efficiently.",
-          cta: <CustomButton label="Let's get started" primary />,
+          cta: (
+            <CustomButton
+              label="Checkout how"
+              primary
+              onClick={() => navigate("/about")}
+            />
+          ),
         }}
       />
 
