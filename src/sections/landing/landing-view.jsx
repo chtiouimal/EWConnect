@@ -226,7 +226,14 @@ function LandingView() {
                 justifyContent: "flex-end",
               }}
             >
-              <CustomButton label="Learn More" primary />
+              <CustomButton
+                label="Learn More"
+                primary
+                onClick={async () => {
+                  // await window.scrollTo({ top: 0, behavior: "smooth" });
+                  navigate("/about#whatweoffer");
+                }}
+              />
             </div>
           </div>
         </div>
@@ -257,7 +264,7 @@ function LandingView() {
             Mission to the UAE, Saudi Arabia & Qatar
           </h5>
           <div>
-            <p style={{ fontSize: 20 }}>
+            <p style={{ fontSize: "1.38vw" }}>
               Unlocking access to the GCCs leading projects markets and
               institutions. We warmly invite you to be part of this important
               mission and to help lead the next era of China-GCC cooperation.

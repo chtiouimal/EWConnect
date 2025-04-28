@@ -5,8 +5,16 @@
   border-radius: 0;
   outline: none;
   box-shadow: none !important;
-  padding: 8px 11px;
+  padding: 0.556vw 0.764vw; /* 8px 11px */
   width: 100% !important;
+  font-size: 0.966vw !important;
+}
+
+:where(.css-dev-only-do-not-override-1v5z42l).ant-form-item
+  .ant-form-item-explain,
+:where(.css-dev-only-do-not-override-1v5z42l).ant-form-item
+  .ant-form-item-extra {
+  font-size: 0.966vw !important;
 }
 
 /* Focused input */
@@ -15,7 +23,7 @@
   border: none;
   border-bottom: 1px solid #26b49a;
   background-color: transparent;
-  box-shadow: none !important; /* Remove any shadow */
+  box-shadow: none !important;
   outline: none;
 }
 
@@ -34,6 +42,7 @@
   background-color: transparent !important;
   box-shadow: none !important;
   outline: none;
+  font-size: 0.966vw !important;
 }
 
 /* Error input on focus */
@@ -44,6 +53,7 @@
   background-color: transparent !important;
   box-shadow: none !important;
   outline: none;
+  font-size: 0.966vw !important;
 }
 
 /* *********************** Select *************************** */
@@ -56,9 +66,10 @@
   border-radius: 0;
   outline: none;
   box-shadow: none !important;
-  padding: 8px 11px;
+  padding: 0.556vw 0.764vw; /* 8px 11px */
   width: 100% !important;
-  height: 39px !important;
+  height: 2.708vw !important; /* 39px */
+  font-size: 0.966vw !important;
 }
 
 /* Focused select */
@@ -86,6 +97,7 @@
   background-color: transparent !important;
   box-shadow: none !important;
   outline: none;
+  font-size: 0.966vw !important;
 }
 
 /* Error select on focus */
@@ -96,10 +108,11 @@
   background-color: transparent !important;
   box-shadow: none !important;
   outline: none;
+  font-size: 0.966vw !important;
 }
 
 .ew-select .ant-select-dropdown {
-  background-color: $bg-blue-grey !important; /* Customize the background color */
+  background-color: $bg-blue-grey !important; /* Customize background */
 }
 
 .ew-select .ant-select-dropdown .ant-select-item-option {
@@ -114,7 +127,8 @@
 .ant-upload-text {
   color: $text-dark !important;
   font: $text;
-  font-size: 12px;
+  font-size: 0.833vw; /* 12px */
+
   span {
     color: $primary-color;
     font-weight: 600;

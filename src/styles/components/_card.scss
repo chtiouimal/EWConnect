@@ -3,29 +3,36 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  max-width: 389px;
-  width: calc(100% - 32px);
+  // max-width: 389px;
+  width: calc(calc(100% / 3) - 32px);
   padding: 32px;
+
   h6,
   p,
   span {
     text-align: center;
     color: $text-light;
-    max-width: 249px;
+    // max-width: 249px;
   }
+
   h6 {
     font: $big-text;
     font-weight: 700;
+    font-size: 1.805vw; // Example if needed, assuming $big-text had a size around 26px
   }
+
   span {
     font: $text;
     font-weight: 700;
     margin-bottom: 32px;
+    font-size: 1.111vw; // 16px
   }
+
   p {
     font: $text;
-    font-size: 14px;
+    font-size: 0.972vw; // 14px
   }
+
   span {
     color: $primary-color !important;
   }
@@ -36,16 +43,19 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 46px;
-  max-width: 389px;
-  width: calc(100% - 32px);
+  width: calc(calc(100% / 3) - 32px);
   padding: 32px;
+
   h6 {
     font: $extra-small-title;
+    font-size: 0.833vw; // 12px
   }
+
   p {
     font: $text;
-    font-size: 14px;
+    font-size: 0.972vw; // 14px
   }
+
   span * {
     color: $primary-color !important;
   }
@@ -54,14 +64,16 @@
 .ew-icon-card-2 {
   border: 1px solid $border-blue-grey-light;
   border-radius: 20px;
+
   & > div {
     display: flex;
     justify-content: space-between;
     gap: 32px;
   }
+
   h6 {
     font: $small-text;
-    font-size: 12px;
+    font-size: 0.833vw; // 12px
   }
 }
 
@@ -76,11 +88,16 @@
   background-color: $bg-blue-grey;
   display: flex;
   gap: 32px;
-  padding: 16px;
-  max-height: 320px;
+  padding: 0.7vw;
+  // height: 50vh;
+
   .ew-project-card-img {
     border-radius: 10px;
     overflow: hidden;
+    min-width: 30%;
+    max-width: 30%;
+    height: auto;
+
     img {
       height: 100%;
       width: 100%;
@@ -88,31 +105,40 @@
       object-fit: cover;
     }
   }
+
   .ew-project-card-text {
-    padding: 0 16px;
+    padding: 0 1.4vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
+    justify-content: center;
+    gap: 10%;
+
     & > * {
-      max-width: 290px;
+      // max-width: 290px;
       width: 100%;
     }
+
     & > div {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 10%;
     }
+
     span {
       font: $text;
       font-weight: 700;
       color: $accent-light-color;
+      font-size: 1.111vw; // 16px
     }
+
     h4 {
       font: $extra-small-title;
+      font-size: 1.111vw; // Assume 16px unless different
     }
+
     p {
       font: $extra-small-text;
+      font-size: 0.972vw; // 14px
     }
   }
 }

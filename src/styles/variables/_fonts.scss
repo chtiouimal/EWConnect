@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-$display: 600 64px "Playfair Display", serif;
+$display: 600 4.416vw "Playfair Display", serif; // 64px → 4.416vw
 
-$big-logo: 400 48px "Lato", sans-serif;
+$big-logo: 400 3.312vw "Lato", sans-serif; // 48px → 3.312vw
 
-$logo: 400 20px "Montserrat", sans-serif;
-$connect: 400 20px "Cormorant Garamond", serif;
+$logo: 400 1.38vw "Montserrat", sans-serif; // 20px → 1.38vw
+$connect: 400 1.38vw "Cormorant Garamond", serif; // 20px → 1.38vw
 
-$title: 600 48px "Playfair Display", serif;
-$small-title: 400 32px "Lato", sans-serif;
-$extra-small-title: 700 18px "Lato", sans-serif;
+$title: 600 3.312vw "Playfair Display", serif; // 48px → 3.312vw
+$small-title: 400 2.208vw "Lato", sans-serif; // 32px → 2.208vw
+$extra-small-title: 700 1.242vw "Lato", sans-serif; // 18px → 1.242vw
 
-$large-text: 400 36px "Lato", sans-serif;
-$big-text: 400 24px "Lato", sans-serif;
-$small-text: 400 14px "Lato", sans-serif;
-$text: 400 16px "Lato", sans-serif;
-$extra-small-text: 300 14px "Lato", sans-serif;
+$large-text: 400 2.484vw "Lato", sans-serif; // 36px → 2.484vw
+$big-text: 400 1.656vw "Lato", sans-serif; // 24px → 1.656vw
+$small-text: 400 0.966vw "Lato", sans-serif; // 14px → 0.966vw
+$text: 400 1.104vw "Lato", sans-serif; // 16px → 1.104vw
+$extra-small-text: 300 0.966vw "Lato", sans-serif; // 14px → 0.966vw
 
-$link-text: 500 20px "Lato", sans-serif;
-$btn-text: 500 16px "Lato", sans-serif;
+$link-text: 500 1.38vw "Lato", sans-serif; // 20px → 1.38vw
+$btn-text: 500 1.104vw "Lato", sans-serif; // 16px → 1.104vw

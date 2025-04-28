@@ -36,16 +36,16 @@ span {
   display: flex;
   button,
   span {
-    border: 1px solid $text-dark;
+    border: 0.07vw solid $text-dark; // 1px
     color: $text-dark;
-    min-height: 41px;
+    min-height: 2.85vw; // 41px
   }
   button {
     background-color: transparent;
     font: $btn-text;
-    border-radius: 50px;
-    padding: 10px 32px;
-    min-width: 190px;
+    border-radius: 1.39vw; // 20px
+    padding: 0.69vw 2.22vw; // 10px 32px
+    min-width: 13.19vw; // 190px
   }
   span {
     border-radius: 50%;
@@ -65,16 +65,16 @@ span {
   display: flex;
   button,
   span {
-    border: 1px solid $primary-color;
-    min-height: 41px;
+    border: 0.07vw solid $primary-color; // 1px
+    min-height: 2.85vw; // 41px
   }
   button {
     background-color: $primary-color;
     font: $btn-text;
     color: $text-light;
-    border-radius: 50px;
-    padding: 10px 32px;
-    min-width: 190px;
+    border-radius: 1.39vw; // 20px
+    padding: 0.69vw 2.22vw; // 10px 32px
+    min-width: 13.19vw; // 190px
   }
   span {
     border-radius: 50%;

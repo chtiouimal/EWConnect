@@ -80,7 +80,7 @@ function CurrentProjectView() {
           className="ew-splited ew-info-text"
           style={{ marginTop: 16, marginBottom: 64 }}
         >
-          <div style={{ maxWidth: 500 }}>
+          <div style={{ maxWidth: "48%" }}>
             <p>
               The Chinese Business delegation to the Gulf Cooperation Council
               (GCC) is a distinctive initiative aimed at connecting high-ranking
@@ -94,7 +94,7 @@ function CurrentProjectView() {
               Saudi Arabia.
             </p>
           </div>
-          <div style={{ maxWidth: 500 }}>
+          <div style={{ maxWidth: "48%" }}>
             <p>
               Our primary objectives to promote meaningful partnerships by
               connecting Chinese enterprises with influential partners, and

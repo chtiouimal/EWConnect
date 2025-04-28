@@ -11,8 +11,8 @@
   }
   & > header,
   & > footer {
-    padding: 32px;
-    min-height: 114px;
+    padding: 1.4vw;
+    min-height: 10vh;
   }
   & > header {
     position: absolute;
@@ -27,15 +27,15 @@
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  height: 48px;
+  height: 3.312vw;
   .ew-logo {
-    height: 48px;
+    height: 3.312vw;
     display: flex;
     align-items: center;
     gap: 8px;
     img {
-      height: 48px;
-      width: 48px;
+      height: 3.312vw;
+      width: 3.312vw;
       object-fit: cover;
       aspect-ratio: 1;
     }
@@ -56,8 +56,8 @@
     gap: 64px;
   }
   .ew-language {
-    height: 48px;
-    width: 48px;
+    height: 3.312vw;
+    width: 3.312vw;
     aspect-ratio: 1;
     background-color: $primary-color;
     color: $text-light;
@@ -81,27 +81,27 @@
     padding-bottom: 20px;
     border-bottom: 1px solid $border-blue-grey;
     img {
-      height: 79px;
-      width: 79px;
+      height: 5.4861vw;
+      width: 5.4861vw;
       aspect-ratio: 1;
       object-fit: cover;
     }
     a {
       display: flex;
       align-items: center;
-      font-size: 32px;
+      font-size: 2.208vw;
       gap: 8px;
       color: #d2ac47;
       p {
         font: $logo;
-        font-size: 32px;
+        font-size: 2.208vw;
         color: #d2ac47;
       }
       span,
       span:hover {
         font: $connect;
         color: #d2ac47;
-        font-size: 32px;
+        font-size: 2.208vw;
       }
     }
   }
@@ -117,8 +117,8 @@
         gap: 32px;
         h4 {
           font: $small-title;
-          font-size: 48px;
-          max-width: 540px;
+          font-size: 3.312vw;
+          max-width: 60%;
         }
       }
     }
@@ -128,7 +128,7 @@
         flex-direction: column;
         gap: 20px;
         a {
-          font-size: 20px;
+          font-size: 1.38vw;
         }
       }
     }
@@ -144,7 +144,7 @@
 .ew-view {
   section {
     padding: 120px 0;
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
   }
   .ew-about {
@@ -157,12 +157,12 @@
     }
   }
   .ew-image-text {
-    padding: 16px;
+    padding: 0.7vw;
     background-color: $bg-blue-grey;
     display: flex;
     justify-content: space-between;
     gap: 64px;
-    max-height: 600px;
+    max-height: 70vh;
     & > div {
       width: 48%;
     }
@@ -190,7 +190,7 @@
       }
       h5 {
         font: $small-text;
-        font-size: 26px;
+        font-size: 1.81vw;
         font-weight: 700;
       }
       h3 {
@@ -201,9 +201,9 @@
         flex-direction: column;
         gap: 32px;
       }
-      p {
-        max-width: 530px;
-      }
+      // p {
+      //   max-width: 530px;
+      // }
     }
   }
   .ew-splited {
@@ -217,12 +217,12 @@
       margin-top: 16px;
     }
     width: 100%;
-    max-width: 1200px;
+    max-width: 90vw;
     & > div {
       width: calc(49%);
     }
     .ew-splited-img {
-      max-height: 656px;
+      // max-height: 656px;
       border-radius: 20px;
       display: flex;
       justify-content: center;
@@ -236,6 +236,7 @@
     .ew-splited-list {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 16px;
       .ew-collapse .ant-collapse-item {
         border-radius: 10px;
@@ -260,7 +261,7 @@
       .ew-collapse .ant-collapse-header {
         .ant-collapse-header-text {
           font: $extra-small-title;
-          font-size: 20px;
+          font-size: 1.38vw;
         }
         background: $bg-grey;
         border-radius: 10px;
@@ -272,6 +273,7 @@
       .ew-collapse .ant-collapse-content-box {
         padding-right: 32px;
         padding-left: 32px;
+        font-size: 0.966vw;
       }
 
       .ew-collapse .ant-collapse-content-active {
@@ -286,7 +288,7 @@
       display: flex;
       flex-direction: column;
       & > * {
-        max-width: 1200px;
+        max-width: 90vw;
         margin: 0 auto;
       }
       &:first-child {
@@ -353,7 +355,7 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 32px;
-    max-width: 1200px;
+    max-width: 90vw;
     margin: 64px auto 0;
     h4 {
       font: $small-title;
@@ -366,7 +368,7 @@
       }
       h6 {
         font: $small-title;
-        font-size: 20px;
+        font-size: 1.38vw;
       }
       p {
         font: $small-text;
@@ -455,7 +457,7 @@
   .ew-splited.ew-info-text {
     * {
       font: $text;
-      font-size: 20px;
+      font-size: 1.38vw;
     }
   }
   .ew-full-img {
@@ -463,7 +465,7 @@
     & > div {
       overflow: hidden;
       border-radius: 20px;
-      height: 371px;
+      height: 40vh;
       width: 100%;
       display: flex;
       align-items: center;
@@ -490,4 +492,12 @@
   .ew-hero {
     background-size: 70% !important;
   }
+  // section,
+  // .ew-hero,
+  // .ew-map,
+  // .ew-grid-2-2 {
+  //   & > div {
+  //     margin: 0 64px !important;
+  //   }
+  // }
 }

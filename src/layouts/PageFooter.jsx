@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LOGO from "../assets/east-wind-connect.png";
 import { CustomButton } from "../componenets";
 
 function PageFooter({ menu }) {
+  const navigate = useNavigate();
+
   return (
     <footer className="ew-footer">
       <header>
@@ -24,9 +26,15 @@ function PageFooter({ menu }) {
             </ul>
           </div>
           <div className="ew-footer-contact">
-            <span>Contact</span>
+            {/* <span>Contact</span> */}
             <h4>Let’s explore how we can help your business grow.</h4>
-            <CustomButton label="Contact us" />
+            <CustomButton
+              label="Contact us"
+              onClick={() => {
+                navigate("/contact");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            />
           </div>
         </div>
       </main>

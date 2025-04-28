@@ -9,8 +9,24 @@ import {
 import HeroSection from "../../componenets/common/HeroSection";
 import { Collapse } from "antd";
 import { CustomMap, CustomArrow } from "../../componenets";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function AboutView() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        // Small delay to make sure page fully rendered
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [location]);
   const PROCESS = [
     {
       title: "Client Discovery\n& Needs Assessment",
@@ -141,31 +157,31 @@ function AboutView() {
       name: "Ines Djibet",
       position: "CEO & Managing Director",
       info: "Leads the company’s strategic vision, manages core operations, and cultivates high-level partnerships across China and the Middle East.",
+      img: "Ines-Djibet.svg",
     },
     {
       name: "Baijia Li",
       position: "Marketing & Promotion Manager (China)",
       info: "Leads marketing and promotional strategies; develops networks and identifies Chinese clients looking for opportunities in the GCC.",
+      img: "Baijia-Li.svg",
     },
     {
       name: "Sabrina Maaouia",
       position: "Operations Manager",
       info: "Manages all operations and internal processes, ensuring successful project delivery; fluent in Chinese, Arabic, and English.",
+      img: "Sabrina-Maaouia.svg",
     },
     {
       name: "Anamele Guettaf",
       position: "Strategy Consultant",
       info: "Assisting clients in developing business strategies for entering and expanding in China and the GCC.",
+      img: "Anamele-Guettaf.svg",
     },
     {
       name: "Mohamed Sherif",
       position: "Head of Logistics",
       info: "Manages and coordinates logistics for client delegations, business travel, and events.",
-    },
-    {
-      name: "Luigi Barcella",
-      position: "Legal Counsel",
-      info: "Manages all legal aspects, ensuring compliance with regulations, overseeing contracts, and addressing all legal matters.",
+      img: "Mohamed-Sherif.svg",
     },
   ];
 
@@ -177,7 +193,7 @@ function AboutView() {
         data={{
           keyword: null,
           title: (
-            <h1 style={{ maxWidth: 1200 }}>
+            <h1 style={{ maxWidth: "90vw" }}>
               We Accelerate <span>Growth</span> for Visionary Companies Through
               Elite Strategy.
             </h1>
@@ -187,7 +203,7 @@ function AboutView() {
               <span className="ew-keyword">Our Mission</span>
               <p
                 className="ew-first-p"
-                style={{ fontSize: 20, marginTop: 22, marginBottom: 32 }}
+                style={{ fontSize: "1.18vw", marginTop: 22, marginBottom: 32 }}
               >
                 East-Wind Connect is a cross-border advisory firm specializing
                 in connecting Chinese businesses and investors with the GCC's
@@ -199,7 +215,7 @@ function AboutView() {
               <span className="ew-keyword">Our approach</span>
               <p
                 className="ew-second-p"
-                style={{ fontSize: 20, marginTop: 22, marginBottom: 100 }}
+                style={{ fontSize: "1.18vw", marginTop: 22, marginBottom: 100 }}
               >
                 As China and the GCC enter a new era of economic cooperation
                 defined by shared ambitions in innovation, infrastructure, and
@@ -276,20 +292,20 @@ function AboutView() {
                 style={{ display: "flex", flexDirection: "column", gap: 22 }}
               >
                 <h6>{item.title}</h6>
-                <p style={{ maxWidth: 360 }}>{item.text}</p>
+                <p style={{ maxWidth: "40%" }}>{item.text}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      <section>
+      <section id="whatweoffer">
         <span>Why choose us</span>
         <h3 style={{ margin: "16px 0 32px 0" }}>
-          Where others advise, we architect transformation — tailored,
+          Where others advise, we architect transformation: Tailored,
           actionable, and built to last.
         </h3>
-        <p style={{ maxWidth: 500, marginBottom: 64 }}>
+        <p style={{ marginBottom: 64 }}>
           We combine deep expertise with tailored strategies to deliver
           measurable, lasting results.
         </p>
@@ -336,6 +352,7 @@ function AboutView() {
               // if (i === 4) return <div key={i} className="ew-icon-card"></div>;
               return (
                 <div key={i} className="ew-img-card">
+                  <img src={member.img} alt={member.name} />
                   <span>{member.icon}</span>
                   <h6 style={{ whiteSpace: "pre-line" }}>{member.name}</h6>
                   <span>{member.position}</span>
@@ -360,7 +377,11 @@ function AboutView() {
           Empowering Regions That Move the World
         </h3>
         <p
-          style={{ maxWidth: 550, textAlign: "center", margin: "32px 0 64px" }}
+          style={{
+            maxWidth: "70%",
+            textAlign: "center",
+            margin: "32px 0 64px",
+          }}
         >
           Our strategic presence in China and the GCC region enables us to
           deliver high-impact solutions in the world’s fastest-growing

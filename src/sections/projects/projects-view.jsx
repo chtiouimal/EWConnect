@@ -81,11 +81,11 @@ function ProjectsView() {
           paddingTop: 200,
         }}
       >
-        <h3 style={{ textAlign: "center", maxWidth: 1200 }}>
+        <h3 style={{ textAlign: "center", maxWidth: "70vw" }}>
           Where <span>Strategy</span> Meets <span>Innovation.</span> Global
           Results Delivered.
         </h3>
-        <p style={{ textAlign: "center", maxWidth: 822 }}>
+        <p style={{ textAlign: "center", maxWidth: "60vw" }}>
           From global business delegations to cutting-edge tech expos, our
           projects are a testament to the power of strategic execution at scale.
           Explore how we help ambitious organizations lead, expand, and
@@ -110,7 +110,7 @@ function ProjectsView() {
             Mission to the UAE, Saudi Arabia & Qatar
           </h5>
           <div>
-            <p style={{ fontSize: 20 }}>
+            <p style={{ fontSize: "1.38vw" }}>
               Unlocking access to the GCCs leading projects markets and
               institutions. We warmly invite you to be part of this important
               mission and to help lead the next era of China-GCC cooperation.
@@ -128,7 +128,7 @@ function ProjectsView() {
       <section style={{ paddingBottom: 0 }}>
         <span>Upcoming projects</span>
         <div className="ew-splited" style={{ marginTop: 32, marginBottom: 64 }}>
-          <h3 style={{ maxWidth: 586 }}>
+          <h3 style={{ maxWidth: "45%" }}>
             <span>Upcoming</span> Missions. Unmatched Opportunities.
           </h3>
           <p>

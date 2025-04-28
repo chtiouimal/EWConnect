@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 a {
-  font: 500 20px "Lato", sans-serif;
+  font: 500 1.38vw "Lato", sans-serif;
   color: #46658d;
 }
 a:hover {
@@ -9,15 +9,15 @@ a:hover {
 }
 
 h1 {
-  font: 600 64px "Playfair Display", serif;
+  font: 600 4.416vw "Playfair Display", serif;
 }
 
 h3 {
-  font: 600 48px "Playfair Display", serif;
+  font: 600 3.312vw "Playfair Display", serif;
 }
 
 p {
-  font: 400 24px "Lato", sans-serif;
+  font: 400 1.656vw "Lato", sans-serif;
 }
 
 h1 span,
@@ -29,7 +29,7 @@ h4 span {
 }
 
 span {
-  font: 300 14px "Lato", sans-serif;
+  font: 300 0.966vw "Lato", sans-serif;
 }
 
 .ew-btn {
@@ -37,16 +37,16 @@ span {
 }
 .ew-btn button,
 .ew-btn span {
-  border: 1px solid #46658d;
+  border: 0.07vw solid #46658d;
   color: #46658d;
-  min-height: 41px;
+  min-height: 2.85vw;
 }
 .ew-btn button {
   background-color: transparent;
-  font: 500 16px "Lato", sans-serif;
-  border-radius: 50px;
-  padding: 10px 32px;
-  min-width: 190px;
+  font: 500 1.104vw "Lato", sans-serif;
+  border-radius: 1.39vw;
+  padding: 0.69vw 2.22vw;
+  min-width: 13.19vw;
 }
 .ew-btn span {
   border-radius: 50%;
@@ -66,16 +66,16 @@ span {
 }
 .ew-btn-primary button,
 .ew-btn-primary span {
-  border: 1px solid #26b49a;
-  min-height: 41px;
+  border: 0.07vw solid #26b49a;
+  min-height: 2.85vw;
 }
 .ew-btn-primary button {
   background-color: #26b49a;
-  font: 500 16px "Lato", sans-serif;
+  font: 500 1.104vw "Lato", sans-serif;
   color: #e9fef8;
-  border-radius: 50px;
-  padding: 10px 32px;
-  min-width: 190px;
+  border-radius: 1.39vw;
+  padding: 0.69vw 2.22vw;
+  min-width: 13.19vw;
 }
 .ew-btn-primary span {
   border-radius: 50%;
@@ -103,7 +103,7 @@ span {
 }
 
 .ew-special-key {
-  font: 400 16px "Lato", sans-serif;
+  font: 400 1.104vw "Lato", sans-serif;
   font-weight: 700;
   color: #58a6ec;
 }
@@ -121,8 +121,8 @@ span {
   min-height: calc(100vh - 707px);
 }
 .ew-main-layout > header, .ew-main-layout > footer {
-  padding: 32px;
-  min-height: 114px;
+  padding: 1.4vw;
+  min-height: 10vh;
 }
 .ew-main-layout > header {
   position: absolute;
@@ -136,28 +136,28 @@ span {
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  height: 48px;
+  height: 3.312vw;
 }
 .ew-navigation-header .ew-logo {
-  height: 48px;
+  height: 3.312vw;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 .ew-navigation-header .ew-logo img {
-  height: 48px;
-  width: 48px;
+  height: 3.312vw;
+  width: 3.312vw;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 1;
 }
 .ew-navigation-header .ew-logo p {
-  font: 400 20px "Montserrat", sans-serif;
+  font: 400 1.38vw "Montserrat", sans-serif;
   color: #d2ac47;
 }
 .ew-navigation-header .ew-logo span,
 .ew-navigation-header .ew-logo span:hover {
-  font: 400 20px "Cormorant Garamond", serif;
+  font: 400 1.38vw "Cormorant Garamond", serif;
   color: #d2ac47;
 }
 .ew-navigation-header .ew-menu {
@@ -167,12 +167,12 @@ span {
   gap: 64px;
 }
 .ew-navigation-header .ew-language {
-  height: 48px;
-  width: 48px;
+  height: 3.312vw;
+  width: 3.312vw;
   aspect-ratio: 1;
   background-color: #26b49a;
   color: #e9fef8;
-  font: 400 14px "Lato", sans-serif;
+  font: 400 0.966vw "Lato", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,8 +193,8 @@ span {
   border-bottom: 1px solid rgba(70, 101, 141, 0.6);
 }
 .ew-footer header img {
-  height: 79px;
-  width: 79px;
+  height: 5.4861vw;
+  width: 5.4861vw;
   aspect-ratio: 1;
   -o-object-fit: cover;
      object-fit: cover;
@@ -202,20 +202,20 @@ span {
 .ew-footer header a {
   display: flex;
   align-items: center;
-  font-size: 32px;
+  font-size: 2.208vw;
   gap: 8px;
   color: #d2ac47;
 }
 .ew-footer header a p {
-  font: 400 20px "Montserrat", sans-serif;
-  font-size: 32px;
+  font: 400 1.38vw "Montserrat", sans-serif;
+  font-size: 2.208vw;
   color: #d2ac47;
 }
 .ew-footer header a span,
 .ew-footer header a span:hover {
-  font: 400 20px "Cormorant Garamond", serif;
+  font: 400 1.38vw "Cormorant Garamond", serif;
   color: #d2ac47;
-  font-size: 32px;
+  font-size: 2.208vw;
 }
 .ew-footer main {
   width: 100%;
@@ -231,9 +231,9 @@ span {
   gap: 32px;
 }
 .ew-footer main > div > div h4 {
-  font: 400 32px "Lato", sans-serif;
-  font-size: 48px;
-  max-width: 540px;
+  font: 400 2.208vw "Lato", sans-serif;
+  font-size: 3.312vw;
+  max-width: 60%;
 }
 .ew-footer main .ew-footer-navigation ul {
   display: flex;
@@ -241,7 +241,7 @@ span {
   gap: 20px;
 }
 .ew-footer main .ew-footer-navigation ul a {
-  font-size: 20px;
+  font-size: 1.38vw;
 }
 .ew-footer main .ew-footer-contact {
   align-items: flex-end;
@@ -252,23 +252,23 @@ span {
 
 .ew-view section {
   padding: 120px 0;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 .ew-view .ew-about h3 {
   text-align: center;
-  font: 400 36px "Lato", sans-serif;
+  font: 400 2.484vw "Lato", sans-serif;
 }
 .ew-view .ew-about .ew-closure {
-  font: 600 64px "Playfair Display", serif;
+  font: 600 4.416vw "Playfair Display", serif;
 }
 .ew-view .ew-image-text {
-  padding: 16px;
+  padding: 0.7vw;
   background-color: rgba(70, 101, 141, 0.12);
   display: flex;
   justify-content: space-between;
   gap: 64px;
-  max-height: 600px;
+  max-height: 70vh;
 }
 .ew-view .ew-image-text > div {
   width: 48%;
@@ -293,32 +293,29 @@ span {
   gap: 64px;
 }
 .ew-view .ew-image-text .ew-text h6 {
-  font: 400 14px "Lato", sans-serif;
+  font: 400 0.966vw "Lato", sans-serif;
   font-weight: 700;
   color: #58a6ec;
 }
 .ew-view .ew-image-text .ew-text h5 {
-  font: 400 14px "Lato", sans-serif;
-  font-size: 26px;
+  font: 400 0.966vw "Lato", sans-serif;
+  font-size: 1.81vw;
   font-weight: 700;
 }
 .ew-view .ew-image-text .ew-text h3 {
-  font: 600 48px "Playfair Display", serif;
+  font: 600 3.312vw "Playfair Display", serif;
 }
 .ew-view .ew-image-text .ew-text > div {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.ew-view .ew-image-text .ew-text p {
-  max-width: 530px;
-}
 .ew-view .ew-splited {
   display: flex;
   justify-content: space-between;
   gap: 64px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 90vw;
 }
 .ew-view .ew-splited > * {
   width: 45%;
@@ -330,7 +327,6 @@ span {
   width: 49%;
 }
 .ew-view .ew-splited .ew-splited-img {
-  max-height: 656px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -345,6 +341,7 @@ span {
 .ew-view .ew-splited .ew-splited-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 16px;
 }
 .ew-view .ew-splited .ew-splited-list .ew-collapse .ant-collapse-item {
@@ -375,12 +372,13 @@ span {
   border-bottom-left-radius: 10px;
 }
 .ew-view .ew-splited .ew-splited-list .ew-collapse .ant-collapse-header .ant-collapse-header-text {
-  font: 700 18px "Lato", sans-serif;
-  font-size: 20px;
+  font: 700 1.242vw "Lato", sans-serif;
+  font-size: 1.38vw;
 }
 .ew-view .ew-splited .ew-splited-list .ew-collapse .ant-collapse-content-box {
   padding-right: 32px;
   padding-left: 32px;
+  font-size: 0.966vw;
 }
 .ew-view .ew-splited .ew-splited-list .ew-collapse .ant-collapse-content-active {
   border-bottom-right-radius: 10px;
@@ -395,7 +393,7 @@ span {
   padding: 100px 88px;
 }
 .ew-view .ew-section-card > div > * {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
 }
 .ew-view .ew-section-card > div:first-child {
@@ -447,10 +445,10 @@ span {
   color: #e9fef8;
 }
 .ew-view .ew-grid-2 > div h6 {
-  font: 400 32px "Lato", sans-serif;
+  font: 400 2.208vw "Lato", sans-serif;
 }
 .ew-view .ew-grid-2 > div p {
-  font: 400 14px "Lato", sans-serif;
+  font: 400 0.966vw "Lato", sans-serif;
 }
 .ew-view .ew-grid-2-2 {
   display: flex;
@@ -458,11 +456,11 @@ span {
   flex-wrap: wrap;
   width: 100%;
   gap: 32px;
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 64px auto 0;
 }
 .ew-view .ew-grid-2-2 h4 {
-  font: 400 32px "Lato", sans-serif;
+  font: 400 2.208vw "Lato", sans-serif;
   font-weight: 600;
 }
 .ew-view .ew-grid-2-2 > div {
@@ -472,11 +470,11 @@ span {
   color: #46658d;
 }
 .ew-view .ew-grid-2-2 > div h6 {
-  font: 400 32px "Lato", sans-serif;
-  font-size: 20px;
+  font: 400 2.208vw "Lato", sans-serif;
+  font-size: 1.38vw;
 }
 .ew-view .ew-grid-2-2 > div p {
-  font: 400 14px "Lato", sans-serif;
+  font: 400 0.966vw "Lato", sans-serif;
 }
 .ew-view .ew-grid-2-box {
   display: flex;
@@ -489,7 +487,7 @@ span {
   width: calc(50% - 8px);
 }
 .ew-view .ew-grid-2-box > div p {
-  font: 400 14px "Lato", sans-serif;
+  font: 400 0.966vw "Lato", sans-serif;
 }
 .ew-view .ew-grid-2-box .ew-item-box {
   height: 61px;
@@ -545,7 +543,7 @@ span {
   gap: 22px;
 }
 .ew-view .ew-contact-list li a {
-  font: 400 16px "Lato", sans-serif;
+  font: 400 1.104vw "Lato", sans-serif;
   font-weight: 500;
   color: #26b49a;
   border-bottom: 1px solid #26b49a;
@@ -560,8 +558,8 @@ span {
   color: #e9fef8;
 }
 .ew-view .ew-splited.ew-info-text * {
-  font: 400 16px "Lato", sans-serif;
-  font-size: 20px;
+  font: 400 1.104vw "Lato", sans-serif;
+  font-size: 1.38vw;
 }
 .ew-view .ew-full-img {
   padding: 32px;
@@ -569,7 +567,7 @@ span {
 .ew-view .ew-full-img > div {
   overflow: hidden;
   border-radius: 20px;
-  height: 371px;
+  height: 40vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -611,6 +609,30 @@ span {
     opacity: 1;
   }
 }
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes highlightAnimation {
+  0% {
+    color: #46658d; /* Start with a different color (tomato) */
+  }
+  100% {
+    color: #26b49a; /* Transition to the default color (black) */
+  }
+}
+.ew-hero h1 > span {
+  animation: highlightAnimation 0.6s ease-in-out forwards;
+}
+
+.ew-hero {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1.5s ease-out forwards;
+}
+
 .ew-hero h1 {
   opacity: 0; /* start hidden */
   animation: slideInLeft 0.8s ease-out forwards;
@@ -620,25 +642,24 @@ span {
 .ew-hero .ew-first-p {
   opacity: 0; /* start hidden */
   animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 0.3s;
+  animation-delay: 1.2s;
 }
 
 .ew-hero .ew-second-p,
 .ew-hero button {
   opacity: 0; /* start hidden */
   animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 0.6s;
+  animation-delay: 2s;
 }
 
-.ew-hero .ew-keyword,
-.ew-hero span {
+.ew-hero .ew-keyword {
   opacity: 0;
   animation: simpleFade 0.5s ease-out forwards;
-  animation-delay: 1s; /* delay it longer */
+  animation-delay: 2.8s; /* delay it longer */
 }
 
 .ew-hero {
-  min-height: 100vh;
+  min-height: 110vh;
   background-size: 80%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -648,24 +669,24 @@ span {
   -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%), repeating-linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%);
 }
 .ew-hero > div {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
-  padding: 200px 32px 64px;
+  padding: 10.8vw 2.208vw 4.416vw;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.76vw;
 }
 .ew-hero > div h1 {
-  max-width: 720px;
+  max-width: 49.68vw;
 }
 .ew-hero > div h1 span {
   color: #26b49a;
   font: inherit;
 }
 .ew-hero > div p {
-  max-width: 500px;
-  margin-top: 40px;
-  font-size: 24px;
+  max-width: 34.5vw;
+  margin-top: 2.76vw;
+  font-size: 1.656vw;
 }
 
 .ew-img-card {
@@ -673,8 +694,7 @@ span {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  max-width: 389px;
-  width: calc(100% - 32px);
+  width: calc(33.3333333333% - 32px);
   padding: 32px;
 }
 .ew-img-card h6,
@@ -682,20 +702,21 @@ span {
 .ew-img-card span {
   text-align: center;
   color: #e9fef8;
-  max-width: 249px;
 }
 .ew-img-card h6 {
-  font: 400 24px "Lato", sans-serif;
+  font: 400 1.656vw "Lato", sans-serif;
   font-weight: 700;
+  font-size: 1.805vw;
 }
 .ew-img-card span {
-  font: 400 16px "Lato", sans-serif;
+  font: 400 1.104vw "Lato", sans-serif;
   font-weight: 700;
   margin-bottom: 32px;
+  font-size: 1.111vw;
 }
 .ew-img-card p {
-  font: 400 16px "Lato", sans-serif;
-  font-size: 14px;
+  font: 400 1.104vw "Lato", sans-serif;
+  font-size: 0.972vw;
 }
 .ew-img-card span {
   color: #26b49a !important;
@@ -706,16 +727,16 @@ span {
   flex-direction: column;
   justify-content: flex-start;
   gap: 46px;
-  max-width: 389px;
-  width: calc(100% - 32px);
+  width: calc(33.3333333333% - 32px);
   padding: 32px;
 }
 .ew-icon-card h6 {
-  font: 700 18px "Lato", sans-serif;
+  font: 700 1.242vw "Lato", sans-serif;
+  font-size: 0.833vw;
 }
 .ew-icon-card p {
-  font: 400 16px "Lato", sans-serif;
-  font-size: 14px;
+  font: 400 1.104vw "Lato", sans-serif;
+  font-size: 0.972vw;
 }
 .ew-icon-card span * {
   color: #26b49a !important;
@@ -731,8 +752,8 @@ span {
   gap: 32px;
 }
 .ew-icon-card-2 h6 {
-  font: 400 14px "Lato", sans-serif;
-  font-size: 12px;
+  font: 400 0.966vw "Lato", sans-serif;
+  font-size: 0.833vw;
 }
 
 .ew-icon-card-bg {
@@ -746,12 +767,14 @@ span {
   background-color: rgba(70, 101, 141, 0.12);
   display: flex;
   gap: 32px;
-  padding: 16px;
-  max-height: 320px;
+  padding: 0.7vw;
 }
 .ew-project-card .ew-project-card-img {
   border-radius: 10px;
   overflow: hidden;
+  min-width: 30%;
+  max-width: 30%;
+  height: auto;
 }
 .ew-project-card .ew-project-card-img img {
   height: 100%;
@@ -761,31 +784,33 @@ span {
      object-fit: cover;
 }
 .ew-project-card .ew-project-card-text {
-  padding: 0 16px;
+  padding: 0 1.4vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 16px;
+  justify-content: center;
+  gap: 10%;
 }
 .ew-project-card .ew-project-card-text > * {
-  max-width: 290px;
   width: 100%;
 }
 .ew-project-card .ew-project-card-text > div {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10%;
 }
 .ew-project-card .ew-project-card-text span {
-  font: 400 16px "Lato", sans-serif;
+  font: 400 1.104vw "Lato", sans-serif;
   font-weight: 700;
   color: #58a6ec;
+  font-size: 1.111vw;
 }
 .ew-project-card .ew-project-card-text h4 {
-  font: 700 18px "Lato", sans-serif;
+  font: 700 1.242vw "Lato", sans-serif;
+  font-size: 1.111vw;
 }
 .ew-project-card .ew-project-card-text p {
-  font: 300 14px "Lato", sans-serif;
+  font: 300 0.966vw "Lato", sans-serif;
+  font-size: 0.972vw;
 }
 
 /* *** grid *** */
@@ -810,8 +835,14 @@ span {
   border-radius: 0;
   outline: none;
   box-shadow: none !important;
-  padding: 8px 11px;
+  padding: 0.556vw 0.764vw; /* 8px 11px */
   width: 100% !important;
+  font-size: 0.966vw !important;
+}
+
+:where(.css-dev-only-do-not-override-1v5z42l).ant-form-item .ant-form-item-explain,
+:where(.css-dev-only-do-not-override-1v5z42l).ant-form-item .ant-form-item-extra {
+  font-size: 0.966vw !important;
 }
 
 /* Focused input */
@@ -820,7 +851,7 @@ span {
   border: none;
   border-bottom: 1px solid #26b49a;
   background-color: transparent;
-  box-shadow: none !important; /* Remove any shadow */
+  box-shadow: none !important;
   outline: none;
 }
 
@@ -839,6 +870,7 @@ span {
   background-color: transparent !important;
   box-shadow: none !important;
   outline: none;
+  font-size: 0.966vw !important;
 }
 
 /* Error input on focus */
@@ -849,6 +881,7 @@ span {
   background-color: transparent !important;
   box-shadow: none !important;
   outline: none;
+  font-size: 0.966vw !important;
 }
 
 /* *********************** Select *************************** */
@@ -860,9 +893,10 @@ span {
   border-radius: 0;
   outline: none;
   box-shadow: none !important;
-  padding: 8px 11px;
+  padding: 0.556vw 0.764vw; /* 8px 11px */
   width: 100% !important;
-  height: 39px !important;
+  height: 2.708vw !important; /* 39px */
+  font-size: 0.966vw !important;
 }
 
 /* Focused select */
@@ -890,6 +924,7 @@ span {
   background-color: transparent !important;
   box-shadow: none !important;
   outline: none;
+  font-size: 0.966vw !important;
 }
 
 /* Error select on focus */
@@ -900,10 +935,11 @@ span {
   background-color: transparent !important;
   box-shadow: none !important;
   outline: none;
+  font-size: 0.966vw !important;
 }
 
 .ew-select .ant-select-dropdown {
-  background-color: rgba(70, 101, 141, 0.12) !important; /* Customize the background color */
+  background-color: rgba(70, 101, 141, 0.12) !important; /* Customize background */
 }
 
 .ew-select .ant-select-dropdown .ant-select-item-option {
@@ -917,8 +953,8 @@ span {
 
 .ant-upload-text {
   color: #46658d !important;
-  font: 400 16px "Lato", sans-serif;
-  font-size: 12px;
+  font: 400 1.104vw "Lato", sans-serif;
+  font-size: 0.833vw; /* 12px */
 }
 .ant-upload-text span {
   color: #26b49a;

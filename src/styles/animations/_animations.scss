@@ -18,6 +18,32 @@
   }
 }
 
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes highlightAnimation {
+  0% {
+    color: $text-dark; /* Start with a different color (tomato) */
+  }
+  100% {
+    color: $primary-color; /* Transition to the default color (black) */
+  }
+}
+
+.ew-hero h1 > span {
+  animation: highlightAnimation 0.6s ease-in-out forwards;
+}
+
+.ew-hero {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1.5s ease-out forwards;
+}
+
 .ew-hero h1 {
   opacity: 0; /* start hidden */
   animation: slideInLeft 0.8s ease-out forwards;
@@ -27,19 +53,18 @@
 .ew-hero .ew-first-p {
   opacity: 0; /* start hidden */
   animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 0.3s;
+  animation-delay: 1.2s;
 }
 
 .ew-hero .ew-second-p,
 .ew-hero button {
   opacity: 0; /* start hidden */
   animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 0.6s;
+  animation-delay: 2s;
 }
 
-.ew-hero .ew-keyword,
-.ew-hero span {
+.ew-hero .ew-keyword {
   opacity: 0;
   animation: simpleFade 0.5s ease-out forwards;
-  animation-delay: 1s; /* delay it longer */
+  animation-delay: 2.8s; /* delay it longer */
 }
