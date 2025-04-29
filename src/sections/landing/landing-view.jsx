@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 
 function LandingView() {
   const navigate = useNavigate();
+
   const SERVICES = [
     {
       title: "Market Entry\n& Expansion Support",
@@ -230,7 +231,6 @@ function LandingView() {
                 label="Learn More"
                 primary
                 onClick={async () => {
-                  // await window.scrollTo({ top: 0, behavior: "smooth" });
                   navigate("/about#whatweoffer");
                 }}
               />

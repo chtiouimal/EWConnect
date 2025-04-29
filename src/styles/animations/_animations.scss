@@ -34,37 +34,59 @@
   }
 }
 
-.ew-hero h1 > span {
-  animation: highlightAnimation 0.6s ease-in-out forwards;
+@keyframes rotateToInitial {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ew-projects-hero,
+.ew-contact-hero,
+.ew-hero {
+  h1 > span {
+    animation: highlightAnimation 0.6s ease-in-out forwards;
+  }
+  h1,
+  h3 {
+    opacity: 0; /* start hidden */
+    animation: slideInLeft 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+
+  .ew-first-p {
+    opacity: 0; /* start hidden */
+    animation: slideInLeft 0.8s ease-out forwards;
+    animation-delay: 0.6s;
+  }
+
+  .ew-second-p {
+    opacity: 0; /* start hidden */
+    animation: slideInLeft 0.8s ease-out forwards;
+    animation-delay: 0.9s;
+  }
+
+  .ew-keyword {
+    opacity: 0;
+    animation: simpleFade 0.5s ease-out forwards;
+    animation-delay: 1.2s; /* delay it longer */
+  }
 }
 
 .ew-hero {
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 1.5s ease-out forwards;
-}
+  .ew-btn-primary {
+    opacity: 0;
+    animation: simpleFade 0.5s ease-out forwards;
+    animation-delay: 0.9s; /* delay it longer */
+  }
 
-.ew-hero h1 {
-  opacity: 0; /* start hidden */
-  animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 0.3s;
-}
-
-.ew-hero .ew-first-p {
-  opacity: 0; /* start hidden */
-  animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 1.2s;
-}
-
-.ew-hero .ew-second-p,
-.ew-hero button {
-  opacity: 0; /* start hidden */
-  animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 2s;
-}
-
-.ew-hero .ew-keyword {
-  opacity: 0;
-  animation: simpleFade 0.5s ease-out forwards;
-  animation-delay: 2.8s; /* delay it longer */
+  .ew-btn-primary > span {
+    animation: rotateToInitial 0.5s ease-in-out forwards;
+    animation-delay: 0.9s; /* delay it longer */
+  }
 }

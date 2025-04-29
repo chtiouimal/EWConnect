@@ -73,6 +73,7 @@ function ProjectsView() {
   return (
     <div className="ew-view">
       <section
+        className="ew-projects-hero"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -85,7 +86,10 @@ function ProjectsView() {
           Where <span>Strategy</span> Meets <span>Innovation.</span> Global
           Results Delivered.
         </h3>
-        <p style={{ textAlign: "center", maxWidth: "60vw" }}>
+        <p
+          className="ew-first-p"
+          style={{ textAlign: "center", maxWidth: "60vw" }}
+        >
           From global business delegations to cutting-edge tech expos, our
           projects are a testament to the power of strategic execution at scale.
           Explore how we help ambitious organizations lead, expand, and

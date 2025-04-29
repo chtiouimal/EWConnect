@@ -108,6 +108,26 @@ span {
   color: #58a6ec;
 }
 
+/* custom scroll bar */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #26b49a;
+  border-radius: 20px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: #26b49a transparent;
+  }
+}
 .ew-main-layout {
   min-width: 100vw;
   width: 100%;
@@ -623,8 +643,49 @@ span {
     color: #26b49a; /* Transition to the default color (black) */
   }
 }
+@keyframes rotateToInitial {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.ew-projects-hero h1 > span,
+.ew-contact-hero h1 > span,
 .ew-hero h1 > span {
   animation: highlightAnimation 0.6s ease-in-out forwards;
+}
+.ew-projects-hero h1,
+.ew-projects-hero h3,
+.ew-contact-hero h1,
+.ew-contact-hero h3,
+.ew-hero h1,
+.ew-hero h3 {
+  opacity: 0; /* start hidden */
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+.ew-projects-hero .ew-first-p,
+.ew-contact-hero .ew-first-p,
+.ew-hero .ew-first-p {
+  opacity: 0; /* start hidden */
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+.ew-projects-hero .ew-second-p,
+.ew-contact-hero .ew-second-p,
+.ew-hero .ew-second-p {
+  opacity: 0; /* start hidden */
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-delay: 0.9s;
+}
+.ew-projects-hero .ew-keyword,
+.ew-contact-hero .ew-keyword,
+.ew-hero .ew-keyword {
+  opacity: 0;
+  animation: simpleFade 0.5s ease-out forwards;
+  animation-delay: 1.2s; /* delay it longer */
 }
 
 .ew-hero {
@@ -632,30 +693,14 @@ span {
   transform: translateY(20px);
   animation: slideUp 1.5s ease-out forwards;
 }
-
-.ew-hero h1 {
-  opacity: 0; /* start hidden */
-  animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 0.3s;
-}
-
-.ew-hero .ew-first-p {
-  opacity: 0; /* start hidden */
-  animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 1.2s;
-}
-
-.ew-hero .ew-second-p,
-.ew-hero button {
-  opacity: 0; /* start hidden */
-  animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 2s;
-}
-
-.ew-hero .ew-keyword {
+.ew-hero .ew-btn-primary {
   opacity: 0;
   animation: simpleFade 0.5s ease-out forwards;
-  animation-delay: 2.8s; /* delay it longer */
+  animation-delay: 0.9s; /* delay it longer */
+}
+.ew-hero .ew-btn-primary > span {
+  animation: rotateToInitial 0.5s ease-in-out forwards;
+  animation-delay: 0.9s; /* delay it longer */
 }
 
 .ew-hero {

@@ -1,11 +1,18 @@
-function HeroSection({ data, position = "right", bg = "/hero-1.png" }) {
+function HeroSection({
+  data,
+  position = "right",
+  bg = "/hero-1.png",
+  classNames = "",
+  ...props
+}) {
   return (
     <div
-      className="ew-hero"
+      className={`ew-hero ${classNames}`}
       style={{
         backgroundPosition: `bottom ${position}`,
         backgroundImage: `url(${bg})`,
       }}
+      {...props}
     >
       <div>
         {data.keyword && <span className="ew-keyword">{data.keyword}</span>}

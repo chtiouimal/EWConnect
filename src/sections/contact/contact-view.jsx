@@ -12,7 +12,10 @@ function ContactView() {
 
   return (
     <div className="ew-view">
-      <section style={{ paddingTop: 220, paddingBottom: 0 }}>
+      <section
+        className="ew-contact-hero"
+        style={{ paddingTop: 220, paddingBottom: 0 }}
+      >
         <div className="ew-splited" style={{ marginTop: 32, marginBottom: 64 }}>
           <h3 style={{ maxWidth: "40%" }}>
             Let’s discuss how we can help your business grow.
@@ -73,13 +76,13 @@ function ContactView() {
           </Form>
         </div>
         <div className="ew-splited" style={{ marginTop: 32, marginBottom: 64 }}>
-          <p style={{ maxWidth: "40%" }}>
+          <p className="ew-first-p" style={{ maxWidth: "40%" }}>
             Contact us today, and let’s build something great together.
           </p>
           <ul className="ew-contact-list">
             <li>
               <span>Email</span>
-              <a>info@eastwindconnect.com</a>
+              <a>Info@eastwind-connect.com</a>
             </li>
             <li>
               <span>.</span>

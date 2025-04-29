@@ -111,3 +111,25 @@ span {
   font-weight: 700;
   color: $accent-light-color;
 }
+
+/* custom scroll bar */
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 20px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: $primary-color transparent;
+  }
+}
