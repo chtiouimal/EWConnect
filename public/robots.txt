@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /private/
 Allow: /
-Sitemap: https://eastwind-connect.com/sitemap.xml
+Sitemap: https://eastwind-connect.com/ewc-sitemap.xml
