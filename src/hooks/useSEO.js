@@ -2,7 +2,6 @@ import { useEffect } from "react";
 
 const useSEO = ({ title, description }) => {
   useEffect(() => {
-    // Update title and meta description
     document.title = title;
 
     const metaDescription = document.querySelector('meta[name="description"]');
