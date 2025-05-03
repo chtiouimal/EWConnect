@@ -9,7 +9,7 @@ function AboutPage() {
   });
 
   return (
-    <main>
+    <main id="about-page">
       <AboutView />
     </main>
   );

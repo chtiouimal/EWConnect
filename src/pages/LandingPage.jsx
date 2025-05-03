@@ -7,7 +7,7 @@ function LandingPage() {
     description: "Guiding Your Business Toward Lasting Success.",
   });
   return (
-    <main>
+    <main id="home-page">
       <LandingView />
     </main>
   );

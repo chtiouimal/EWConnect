@@ -8,7 +8,7 @@ function ProjectsPage() {
       "Explore the projects we're working on to accelerate growth for visionary companies across industries.",
   });
   return (
-    <main>
+    <main id="projects-page">
       <ProjectsView />
     </main>
   );

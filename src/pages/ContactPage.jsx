@@ -8,7 +8,7 @@ function ContactPage() {
       "Get in touch with East Wind Connect. We're ready to accelerate your company's growth through elite strategy and collaboration.",
   });
   return (
-    <main>
+    <main id="contact-page">
       <ContactView />
     </main>
   );
