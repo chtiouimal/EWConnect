@@ -1,4 +1,4 @@
-import useSEO from "../hooks/useSeo";
+import useSEO from "../hooks/useSeoMeta";
 import LandingView from "../sections/landing/landing-view";
 
 function LandingPage() {

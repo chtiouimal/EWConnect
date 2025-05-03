@@ -1,4 +1,4 @@
-import useSEO from "../hooks/useSeo";
+import useSEO from "../hooks/useSeoMeta";
 import CurrentProjectView from "../sections/projects/current-project/current-project-view";
 
 function CurrentProjectPage() {

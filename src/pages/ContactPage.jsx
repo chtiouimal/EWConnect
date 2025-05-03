@@ -1,4 +1,4 @@
-import useSEO from "../hooks/useSeo";
+import useSEO from "../hooks/useSeoMeta";
 import ContactView from "../sections/contact/contact-view";
 
 function ContactPage() {

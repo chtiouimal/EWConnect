@@ -1,4 +1,4 @@
-import useSEO from "../hooks/useSeo";
+import useSEO from "../hooks/useSeoMeta";
 import ProjectsView from "../sections/projects/projects-view";
 
 function ProjectsPage() {

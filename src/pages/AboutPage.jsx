@@ -1,4 +1,4 @@
-import useSEO from "../hooks/useSeo";
+import useSEO from "../hooks/useSeoMeta";
 import AboutView from "../sections/about/about-view";
 
 function AboutPage() {
