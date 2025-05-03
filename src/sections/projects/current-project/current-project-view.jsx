@@ -63,10 +63,10 @@ function CurrentProjectView() {
     <div className="ew-view">
       <section style={{ paddingTop: 160, paddingBottom: 64 }}>
         <span className="ew-special-key">August 24th - August 29th,2025</span>
-        <h3 style={{ marginTop: 16, fontSize: 64 }}>
+        <h1 style={{ marginTop: 16, fontSize: 64 }}>
           Strategic GCC Business Delegation: An Unprecedented Multinational
           Mission to the UAE, Saudi Arabia and Qatar
-        </h3>
+        </h1>
       </section>
       <div className="ew-full-img">
         <div>

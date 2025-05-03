@@ -17,11 +17,18 @@ function PageFooter({ menu }) {
         <div>
           <div className="ew-footer-navigation">
             <span>Navigation</span>
-            <ul>
+            <ul style={{ listStyle: "none" }}>
               {menu.map((item) => (
-                <Link key={item.link} to={item.link}>
-                  {item.label}
-                </Link>
+                <li key={item.link}>
+                  <Link
+                    to={item.link}
+                    onClick={() =>
+                      window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
+                  >
+                    {item.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>

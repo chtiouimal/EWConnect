@@ -122,7 +122,10 @@ function ProjectsView() {
             <CustomButton
               label="Apply to the project"
               primary
-              onClick={() => navigate("current")}
+              onClick={() => {
+                navigate("current");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             />
           </div>
           <span>Facilitating relations between China & GCC</span>

@@ -10,11 +10,12 @@ function NavigationHeader({ menu }) {
       </Link>
       <ul className="ew-menu">
         {menu.map((item) => (
-          <Link key={item.link} to={item.link}>
-            {item.label}
-          </Link>
+          <li key={item.link}>
+            <Link to={item.link}>{item.label}</Link>
+          </li>
         ))}
       </ul>
+
       <span className="ew-language">EN</span>
     </header>
   );
