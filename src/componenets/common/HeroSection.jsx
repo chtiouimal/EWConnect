@@ -1,5 +1,6 @@
 function HeroSection({
   data,
+  main,
   position = "right",
   bg = "/hero-1.png",
   classNames = "",
@@ -7,11 +8,9 @@ function HeroSection({
 }) {
   return (
     <div
-      className={`ew-hero ${classNames}`}
-      style={{
-        backgroundPosition: `bottom ${position}`,
-        backgroundImage: `url(${bg})`,
-      }}
+      className={`ew-hero ${
+        position === "left" && document.innerWidth > 1440 ? "ew-hero-left" : ""
+      } ${classNames}`}
       {...props}
     >
       <div>

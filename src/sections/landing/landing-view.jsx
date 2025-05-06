@@ -5,7 +5,6 @@ import {
   EyeIcon,
   GlobeIcon,
   HandshakeIcon,
-  icons,
   LandmarkIcon,
   PlaneIcon,
   SectionIcon,
@@ -107,7 +106,7 @@ function LandingView() {
   ];
 
   return (
-    <div className="ew-view">
+    <div id="landing-page" className="ew-view">
       <HeroSection
         data={{
           keyword: "Smart Solutions",
@@ -119,7 +118,7 @@ function LandingView() {
           text: "From strategy to execution, we help businesses streamline operations, optimize resources, and scale efficiently.",
           cta: (
             <CustomButton
-              label="Checkout how"
+              label="Discover Our Approach"
               primary
               onClick={() => navigate("/about")}
             />
@@ -165,7 +164,7 @@ function LandingView() {
         </div>
         <div className="ew-card-grid">
           {SERVICES.map((service, i) => {
-            // if (i === 4) return <div key={i} className="ew-icon-card"></div>;
+            if (i === 4 && window.innerWidth <= 768) return;
             return (
               <div key={i} className="ew-icon-card">
                 <span>{service.icon}</span>
@@ -197,7 +196,7 @@ function LandingView() {
         </div>
         <div>
           <h3 style={{ textAlign: "center" }}>
-            Unlocking access to the gcc’s leading projects, markets and
+            Unlocking access to the GCC’s leading projects, markets and
             institutions
           </h3>
           <div className="ew-grid-2-box">
@@ -211,7 +210,7 @@ function LandingView() {
         </div>
       </div>
 
-      <section style={{ paddingBottom: 64 }}>
+      <section className="ew-whatwedeliver" style={{ paddingBottom: 64 }}>
         <div className="ew-splited">
           <h3>Architecting Lasting Transformation</h3>
           <div>
@@ -251,7 +250,7 @@ function LandingView() {
         </h3>
       </section>
       <div
-        className="ew-image-text"
+        className="ew-image-text ew-current-prject"
         style={{ margin: "0 32px", borderRadius: 40, maxHeight: "unset" }}
       >
         <div className="ew-image">

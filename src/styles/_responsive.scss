@@ -1,0 +1,494 @@
+// @media (max-width: 768px) {
+//   // header layout
+//   h1 {
+//     font-size: 40px !important;
+//   }
+//   .ew-hero > div {
+//     padding: 100px 32px 64px !important;
+//   }
+//   .ew-navigation-header {
+//     .ew-logo {
+//       p {
+//         display: none;
+//       }
+//     }
+//     .ew-menu-trigger {
+//       display: flex;
+//     }
+//     .ew-menu {
+//       display: none !important;
+//     }
+//   }
+//   .ew-footer {
+//     margin: 16px;
+//     header {
+//       justify-content: center;
+//       img {
+//         height: 48px !important;
+//         width: 48px !important;
+//       }
+//       * {
+//         font-size: 20px !important;
+//       }
+//     }
+//     main {
+//       & > div {
+//         flex-wrap: wrap !important;
+//         h4 {
+//           max-width: 100% !important;
+//           font-size: 32px !important;
+//         }
+//       }
+//       .ew-footer-contact {
+//         align-items: flex-start;
+//       }
+//     }
+//   }
+//   .ew-btn {
+//     button {
+//       padding: 10px 32px; // 10px 32px
+//       min-width: calc(100% - 41px); // 190px
+//     }
+//   }
+
+//   .ew-btn-primary {
+//     max-width: 300px;
+//     button {
+//       padding: 10px 16px; // 10px 32px
+//       min-width: calc(100% - 41px); // 190px
+//     }
+//   }
+//   .ew-view section {
+//     padding: 60px 0;
+//   }
+
+//   .ew-image-grid {
+//     padding: 0 8px !important;
+//     gap: 8px !important;
+//     img:first-child {
+//       width: calc(50% - 4px) !important;
+//     }
+//     img {
+//       width: calc(50% - 4px) !important;
+//       border-radius: 20px;
+//       height: 40vh !important;
+//       object-fit: cover;
+//     }
+//     img:last-child {
+//       width: 100% !important;
+//       height: 20vh !important;
+//     }
+//   }
+//   .ew-view .ew-about h3 {
+//     font-size: 32px;
+//   }
+//   .ew-view .ew-splited {
+//     flex-wrap: wrap;
+//     gap: 64px;
+//     width: 100%;
+//     margin: 0 !important;
+//     max-width: 90vw;
+//     & > div,
+//     & > * {
+//       width: 100% !important;
+//       & > div {
+//         justify-content: flex-start !important;
+//       }
+//     }
+//   }
+//   .ew-view .ew-section-card {
+//     padding: 0 8px;
+//     .ew-grid-2 {
+//       gap: 32px;
+//       & > div {
+//         width: 100%;
+//       }
+//     }
+//     h3 {
+//       font-size: 32px;
+//     }
+//     h6 {
+//       font-size: 24px !important;
+//     }
+//   }
+//   .ew-view .ew-section-card > div {
+//     padding: 32px 16px;
+//   }
+//   .ew-view .ew-grid-2-box > div {
+//     width: 100%;
+//   }
+//   .ew-card-grid {
+//     margin: 0 !important;
+//     padding-top: 32px;
+//   }
+//   .ew-icon-card {
+//     width: calc(50% - 8px) !important;
+//     padding: 8px !important;
+//     gap: 16px !important;
+//     h6 {
+//       font-size: 16px !important;
+//     }
+//     p {
+//       font-size: 14px !important;
+//       margin-top: auto;
+//     }
+//   }
+//   .ew-view .ew-image-text {
+//     max-height: unset;
+//     padding: 0;
+//     p {
+//       font-size: 20px !important;
+//     }
+//   }
+//   .ew-view .ew-image-text > div {
+//     width: 100%;
+//   }
+//   .ew-view .ew-image-text .ew-text {
+//     padding: 32px 16px;
+//     h5 {
+//       font-size: 24px;
+//     }
+//   }
+//   .ew-view .ew-image-text .ew-image {
+//     display: none;
+//   }
+// }
+
+// @media (max-width: 640px) {
+//   .ew-closure {
+//     font-size: 2rem !important;
+//   }
+// }
+
+@media (max-width: 1440px) {
+  #projects-page,
+  #contact-page,
+  #current-project-page {
+    min-height: 90vh;
+    padding-top: 100px;
+    .ew-projects-hero {
+      padding-bottom: 100px;
+    }
+  }
+  .ew-main-layout {
+    & > header,
+    & > footer {
+      padding: 20px;
+    }
+  }
+  .ew-view .ew-about h3 {
+    font: $large-text-res;
+  }
+
+  .ew-view .ew-image-text .ew-text h3 {
+    font: $title-res;
+  }
+  .ew-view {
+    .ew-image-text {
+      padding: 10px;
+      & > div {
+        width: 48%;
+      }
+      .ew-text {
+        padding: 32px 32px 32px 0;
+        h6 {
+          font: $small-text-res;
+        }
+        h5 {
+          font: $small-text-res;
+          font-size: 28px;
+        }
+        h3 {
+          font: $title-res;
+        }
+      }
+    }
+  }
+  .ew-view .ew-grid-2 > div {
+    h6 {
+      font: $small-title-res;
+    }
+    p {
+      font: $small-text-res;
+      font-size: 16px;
+    }
+  }
+  .ew-grid-2-box {
+    gap: 16px;
+    & > div {
+      width: calc(50% - 8px);
+      p {
+        font: $small-text-res;
+      }
+    }
+    .ew-item-box {
+      height: 61px;
+      gap: 32px;
+      padding: 0 32px;
+      p {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .ew-view .ew-section-card {
+    & > div:last-child {
+      padding: 64px 32px 0;
+    }
+  }
+  .ew-view .ew-current-prject {
+    border-radius: 30px !important;
+    p {
+      font-size: 18px !important;
+    }
+  }
+  .ew-closure {
+    font-size: 64px !important;
+  }
+
+  .ew-view .ew-grid-2-2 {
+    width: 100%;
+    gap: 32px;
+    max-width: 90vw;
+    margin: 64px auto 0;
+    h4 {
+      font: $small-title-res;
+    }
+    & > div {
+      width: 45%;
+      h6 {
+        font: $small-title-res;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        font: $small-text-res;
+        max-width: 60% !important;
+      }
+    }
+  }
+  .ew-view .ew-splited .ew-splited-list {
+    gap: 16px;
+    .ew-collapse .ant-collapse-item {
+      border-radius: 10px;
+      .ant-collapse-header {
+        border-radius: 10px;
+      }
+    }
+    .ew-collapse .ant-collapse-item-active {
+      border-radius: 10px;
+      .ant-collapse-header-active {
+        border-radius: 10px;
+      }
+    }
+    .ew-collapse .ant-collapse-header {
+      .ant-collapse-header-text {
+        font: $extra-small-title-res;
+        font-size: 20px;
+      }
+      padding: 22px 16px;
+    }
+
+    .ew-collapse .ant-collapse-content-box {
+      font-size: 14px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    .ew-collapse .ant-collapse-content-active {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+  .ew-view .ew-splited.ew-info-text * {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ew-main-layout {
+    & > header,
+    & > footer {
+      padding: 16px;
+    }
+  }
+  .ew-view .ew-full-img {
+    padding: 16px;
+    & > div img {
+      height: 100%;
+    }
+  }
+  .ew-view section {
+    padding: 32px 0;
+    max-width: 100%;
+    margin: 0 16px;
+  }
+  .ew-view .ew-about h3 {
+    font-size: 24px;
+  }
+  .ew-view {
+    .ew-image-text {
+      padding: 10px;
+      & > div {
+        width: 100%;
+      }
+      .ew-image {
+        display: none;
+      }
+      .ew-text {
+        padding: 16px;
+        gap: 32px;
+        & > div {
+          gap: 16px;
+        }
+        h5 {
+          font-size: 28px;
+        }
+        h3 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .ew-view .ew-splited {
+    margin-top: 16px !important;
+    flex-direction: column;
+    gap: 32px;
+    & > * {
+      width: 100% !important;
+    }
+    & > div > div {
+      justify-content: flex-start !important;
+    }
+  }
+  .ew-view .ew-section-card {
+    padding: 0 8px;
+    & > div {
+      padding: 32px 16px;
+      h3 {
+        font-size: 32px;
+      }
+    }
+    & > div:first-child {
+      gap: 32px;
+    }
+    & > div:last-child {
+      padding: 32px 8px 0;
+      gap: 32px;
+    }
+  }
+  .ew-view .ew-grid-2 {
+    gap: 32px;
+    & > div {
+      width: 100%;
+      gap: 8px !important;
+      h6 {
+        font-size: 24px;
+      }
+      p {
+        font: $small-text-res;
+        font-size: 14px;
+      }
+    }
+  }
+  .ew-grid-2-box {
+    gap: 16px;
+    & > div {
+      width: 100% !important;
+      p {
+        font: $small-text-res;
+      }
+    }
+    .ew-item-box {
+      height: 61px;
+      gap: 16px !important;
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+  .ew-view .ew-current-prject {
+    margin: 0 16px !important;
+    p {
+      font-size: 18px !important;
+    }
+  }
+  .ew-closure {
+    font-size: 32px !important;
+  }
+  .ew-view .ew-section-card-2 {
+    padding: 0 16px;
+    h3 {
+      font-size: 32px;
+    }
+    & > div:first-child .ew-section-banner {
+      height: 200px;
+    }
+  }
+  .ew-view .ew-grid-2-2 {
+    width: 100%;
+    gap: 32px;
+    max-width: 90vw;
+    margin: 64px auto 0;
+    h4 {
+      font: $small-title-res;
+      font-size: 24px;
+    }
+    & > div {
+      width: 100%;
+      h6 {
+        font: $small-title-res;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        font: $small-text-res;
+        max-width: 100% !important;
+      }
+    }
+  }
+  #whatweoffer {
+    h3 {
+      font-size: 32px;
+    }
+    .ew-splited {
+      .ew-splited-img {
+        display: none;
+      }
+    }
+  }
+  .ew-view .ew-map {
+    max-height: 60vh;
+  }
+  #current-project-card {
+    padding-bottom: 16px !important;
+    text-align: center;
+  }
+  #upcomingProjects h3 {
+    max-width: 100% !important;
+  }
+  .ew-view .ew-splited.ew-info-text {
+    & > div {
+      max-width: 100% !important;
+    }
+  }
+  .ew-view .ew-image-text.ew-image-text-bg-blue {
+    margin: 0 8px !important;
+    display: flex;
+    flex-direction: column-reverse;
+    .ew-image {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  #ew-aplication-form {
+    justify-content: center;
+    form {
+      width: 100% !important;
+    }
+  }
+}

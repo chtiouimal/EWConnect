@@ -8,7 +8,10 @@ function PageFooter({ menu }) {
   return (
     <footer className="ew-footer">
       <header>
-        <Link to="/">
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <img src={LOGO} alt="east-wind-connect" />
           EAST WIND Connect
         </Link>
@@ -33,7 +36,6 @@ function PageFooter({ menu }) {
             </ul>
           </div>
           <div className="ew-footer-contact">
-            {/* <span>Contact</span> */}
             <h4>Let’s explore how we can help your business grow.</h4>
             <CustomButton
               label="Contact us"

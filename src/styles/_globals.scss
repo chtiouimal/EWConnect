@@ -115,21 +115,76 @@ span {
 /* custom scroll bar */
 
 body::-webkit-scrollbar {
-  width: 6px;
+  width: 0.4167vw; // 6px
 }
 
 body::-webkit-scrollbar-track {
   background: transparent;
-  border-radius: 20px;
+  border-radius: 1.3889vw; // 20px
 }
 
 body::-webkit-scrollbar-thumb {
   background: $primary-color;
-  border-radius: 20px;
+  border-radius: 1.3889vw; // 20px
 }
 
 @supports not selector(::-webkit-scrollbar) {
   body {
     scrollbar-color: $primary-color transparent;
+  }
+}
+
+@media (max-width: 1440px) {
+  a {
+    font: $link-text-res;
+  }
+
+  h1 {
+    font: $display-res;
+  }
+
+  h3 {
+    font: $title-res;
+  }
+
+  p {
+    font: $big-text-res;
+  }
+
+  span {
+    font: $extra-small-text-res;
+  }
+
+  .ew-btn-primary,
+  .ew-btn {
+    button,
+    span {
+      border-width: 1px;
+      min-height: 41px;
+    }
+    button {
+      font: $btn-text-res;
+      border-radius: 20px;
+      padding: 10px 32px;
+      min-width: 190px;
+    }
+  }
+
+  .ew-special-key {
+    font: $text-res;
+  }
+
+  /* custom scroll bar */
+
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  body::-webkit-scrollbar-track {
+    border-radius: 20px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
   }
 }

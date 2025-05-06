@@ -193,17 +193,20 @@ function AboutView() {
         data={{
           keyword: null,
           title: (
-            <h1 style={{ maxWidth: "90vw" }}>
+            <h1 className="ew-small-h1" style={{ maxWidth: "90vw" }}>
               We Accelerate <span>Growth</span> for Visionary Companies Through
               Elite Strategy.
             </h1>
           ),
           text: (
-            <div style={{ marginLeft: "50%", width: "50%" }}>
+            <div
+              className="ew-hero-content-text"
+              style={{ marginLeft: "50%", width: "50%" }}
+            >
               <span className="ew-keyword">Our Mission</span>
               <p
                 className="ew-first-p"
-                style={{ fontSize: "1.18vw", marginTop: 22, marginBottom: 32 }}
+                style={{ marginTop: 22, marginBottom: 32 }}
               >
                 East-Wind Connect is a cross-border advisory firm specializing
                 in connecting Chinese businesses and investors with the GCC's
@@ -215,7 +218,7 @@ function AboutView() {
               <span className="ew-keyword">Our approach</span>
               <p
                 className="ew-second-p"
-                style={{ fontSize: "1.18vw", marginTop: 22, marginBottom: 100 }}
+                style={{ marginTop: 22, marginBottom: 100 }}
               >
                 As China and the GCC enter a new era of economic cooperation
                 defined by shared ambitions in innovation, infrastructure, and

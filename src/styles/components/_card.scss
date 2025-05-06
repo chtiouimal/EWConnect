@@ -5,8 +5,13 @@
   align-items: center;
   // max-width: 389px;
   width: calc(calc(100% / 3) - 32px);
+  max-width: 300px;
   padding: 32px;
-
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
   h6,
   p,
   span {
@@ -14,7 +19,9 @@
     color: $text-light;
     // max-width: 249px;
   }
-
+  p {
+    min-height: 38px;
+  }
   h6 {
     font: $big-text;
     font-weight: 700;
@@ -54,6 +61,7 @@
   p {
     font: $text;
     font-size: 0.972vw; // 14px
+    margin-top: auto;
   }
 
   span * {
@@ -157,4 +165,188 @@
   gap: 32px;
   flex-wrap: wrap;
   padding: 0 32px;
+}
+
+@media (max-width: 1440px) {
+  .ew-icon-card {
+    gap: 32px;
+    width: calc(calc(100% - 32px) / 3);
+    padding: 16px;
+
+    h6 {
+      font: $extra-small-title-res;
+      font-size: 20px;
+    }
+
+    p {
+      font: $text-res;
+      font-size: 14px;
+    }
+  }
+  .ew-img-card {
+    width: calc(calc(100% - 32px) / 3);
+    padding: 32px;
+
+    h6,
+    p,
+    span {
+      text-align: center;
+      color: $text-light;
+    }
+
+    h6 {
+      font: $big-text-res;
+      font-weight: 700;
+      font-size: 26px; // Example if needed, assuming $big-text had a size around 26px
+    }
+
+    span {
+      font: $text-res;
+      font-weight: 700;
+      margin-bottom: 32px;
+      font-size: 16px; // 16px
+    }
+
+    p {
+      font: $text-res;
+      font-size: 14px; // 14px
+    }
+
+    span {
+      color: $primary-color !important;
+    }
+  }
+
+  .ew-project-card {
+    width: calc(50% - 16px);
+    min-height: 250px;
+    gap: 0;
+    padding: 10px;
+    // height: 50vh;
+
+    .ew-project-card-img {
+      min-width: 30%;
+      max-width: 30%;
+    }
+
+    .ew-project-card-text {
+      padding: 0 22px;
+      gap: 16px;
+
+      & > * {
+        // max-width: 290px;
+        width: 100%;
+      }
+
+      & > div {
+        gap: 16px;
+      }
+
+      span {
+        font: $text-res;
+        font-size: 16px; // 16px
+      }
+
+      h4 {
+        font: $extra-small-title-res;
+        font-size: 16px; // Assume 16px unless different
+      }
+
+      p {
+        font: $extra-small-text-res;
+        font-size: 14px; // 14px
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .ew-full-grid.ew-projects-grid {
+    gap: 16px;
+    .ew-project-card {
+      width: 100%;
+      min-height: unset;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ew-icon-card {
+    gap: 16px;
+    width: calc(calc(100% - 16px) / 2);
+    padding: 16px;
+
+    // p {
+    //   margin-top: unset;
+    // }
+  }
+  .ew-view .ew-image-grid {
+    max-height: 60vh;
+    gap: 8px;
+    padding: 0 8px;
+    width: 100%;
+    height: 100%;
+    img {
+      height: auto;
+      &:last-child {
+        height: 40% !important;
+      }
+    }
+  }
+  .ew-img-card {
+    width: 100%;
+    padding: 32px;
+
+    h6,
+    p,
+    span {
+      text-align: center;
+      color: $text-light;
+    }
+
+    h6 {
+      font: $big-text-res;
+      font-weight: 700;
+      font-size: 26px; // Example if needed, assuming $big-text had a size around 26px
+    }
+
+    span {
+      font: $text-res;
+      font-weight: 700;
+      margin-bottom: 32px;
+      font-size: 16px; // 16px
+    }
+
+    p {
+      font: $text-res;
+      font-size: 14px; // 14px
+    }
+
+    span {
+      color: $primary-color !important;
+    }
+  }
+  .ew-view .ew-card-grid {
+    justify-content: center;
+  }
+
+  .ew-full-grid.ew-projects-grid {
+    padding: 0 16px;
+    .ew-project-card {
+      flex-direction: column;
+      .ew-project-card-img {
+        max-width: 100%;
+        height: 160px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .ew-card-grid {
+    .ew-icon-card.ew-icon-card-2 {
+      width: 100%;
+    }
+  }
 }

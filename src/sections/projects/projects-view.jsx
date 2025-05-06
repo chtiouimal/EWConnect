@@ -79,17 +79,13 @@ function ProjectsView() {
           flexDirection: "column",
           alignItems: "center",
           gap: 64,
-          paddingTop: 200,
         }}
       >
-        <h3 style={{ textAlign: "center", maxWidth: "70vw" }}>
+        <h1 style={{ textAlign: "center" }}>
           Where <span>Strategy</span> Meets <span>Innovation.</span> Global
           Results Delivered.
-        </h3>
-        <p
-          className="ew-first-p"
-          style={{ textAlign: "center", maxWidth: "60vw" }}
-        >
+        </h1>
+        <p className="ew-first-p" style={{ textAlign: "center" }}>
           From global business delegations to cutting-edge tech expos, our
           projects are a testament to the power of strategic execution at scale.
           Explore how we help ambitious organizations lead, expand, and
@@ -97,11 +93,14 @@ function ProjectsView() {
         </p>
       </section>
 
-      <section style={{ paddingBottom: 32, paddingTop: 0 }}>
+      <section
+        id="current-project-card"
+        style={{ paddingBottom: 32, paddingTop: 0 }}
+      >
         <span>Current project</span>
       </section>
       <div
-        className="ew-image-text"
+        className="ew-image-text ew-current-prject"
         style={{ margin: "0 32px", borderRadius: 34, maxHeight: "unset" }}
       >
         <div className="ew-image">
@@ -132,7 +131,7 @@ function ProjectsView() {
         </div>
       </div>
 
-      <section style={{ paddingBottom: 0 }}>
+      <section id="upcomingProjects" style={{ paddingBottom: 0 }}>
         <span>Upcoming projects</span>
         <div className="ew-splited" style={{ marginTop: 32, marginBottom: 64 }}>
           <h3 style={{ maxWidth: "45%" }}>
@@ -145,7 +144,7 @@ function ProjectsView() {
           </p>
         </div>
       </section>
-      <div className="ew-full-grid">
+      <div className="ew-full-grid ew-projects-grid">
         {EVENTS.map((event) => (
           <div className="ew-project-card" key={event.date}>
             <div className="ew-project-card-img">

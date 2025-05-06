@@ -1,37 +1,87 @@
-.ew-hero {
-  min-height: 110vh;
-  background-size: 80%;
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-color: $bg-white;
-  mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 80%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 10%,
-      rgba(0, 0, 0, 0) 10%,
-      rgba(0, 0, 0, 0) 100%
+.ew-hero-left {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url(/hero-1.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto; /* or something like 80% if needed */
+
+    /* Shift the background image leftward */
+    transform: translateX(-50%);
+
+    /* Mask the visible area to only show the right half */
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 50%,
+      black 100%
     );
-  -webkit-mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 80%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 10%,
-      rgba(0, 0, 0, 0) 10%,
-      rgba(0, 0, 0, 0) 100%
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 50%,
+      black 100%
     );
 
+    pointer-events: none;
+  }
+}
+.ew-hero {
+  position: relative;
+  min-height: 110vh;
+  overflow: hidden;
+  background-color: $bg-white;
+
+  // Background layer with mask
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: url("/hero-1.png"); // or use your `bg` prop via inline style
+    background-position: bottom right;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 10%,
+        rgba(0, 0, 0, 0) 10%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 10%,
+        rgba(0, 0, 0, 0) 10%,
+        rgba(0, 0, 0, 0) 100%
+      );
+
+    pointer-events: none;
+  }
+
+  // Actual content
   & > div {
-    max-width: 80%;
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
     margin: 0 auto;
     padding: 10.8vw 2.208vw 4.416vw;
     display: flex;
@@ -39,7 +89,8 @@
     gap: 2.76vw;
 
     h1 {
-      max-width: 49.68vw;
+      max-width: 60%;
+
       span {
         color: $primary-color;
         font: inherit;
@@ -50,6 +101,189 @@
       max-width: 34.5vw;
       margin-top: 2.76vw;
       font-size: 1.656vw;
+    }
+  }
+  .ew-first-p,
+  .ew-second-p {
+    font-size: 1.18vw;
+  }
+}
+
+.ew-projects-hero {
+  padding-top: 200px;
+  min-height: 70vh;
+  justify-content: center;
+  h1 {
+    max-width: 70vw;
+  }
+  p {
+    max-width: 60vw;
+  }
+}
+
+.ew-contact-hero {
+  padding-top: 220px;
+  .ew-splited {
+    flex-direction: row;
+    .ew-first-p,
+    h1 {
+      max-width: 40%;
+    }
+  }
+}
+
+.ew-current-hero {
+  padding-top: 160px;
+  h1 {
+    margin-top: 16px;
+    font-size: 64px;
+  }
+}
+
+#projects-page,
+#contact-page {
+  display: flex;
+  align-items: center;
+}
+
+#contact-page {
+  min-height: 90vh;
+}
+
+@media (max-width: 1440px) {
+  #landing-page {
+    .ew-hero .ew-first-p {
+      font-size: 24px;
+    }
+  }
+  .ew-hero-left {
+    // Background layer with mask
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-image: url("/hero-1.png"); // or use your `bg` prop via inline style
+      background-position: bottom right;
+      background-size: 80%;
+      background-repeat: no-repeat;
+
+      mask-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        repeating-linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 10%,
+          rgba(0, 0, 0, 0) 10%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      -webkit-mask-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        repeating-linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 10%,
+          rgba(0, 0, 0, 0) 10%,
+          rgba(0, 0, 0, 0) 100%
+        );
+
+      pointer-events: none;
+    }
+  }
+  .ew-hero {
+    & > div {
+      padding: 160px 32px 64px; // 10.8vw 2.208vw 4.416vw
+      gap: 40px; // 2.76vw
+      p {
+        max-width: 40%; // leave as %
+        margin-top: 40px; // 2.76vw
+        font-size: 24px; // 1.656vw
+      }
+    }
+    .ew-first-p,
+    .ew-second-p {
+      font-size: 16px;
+    }
+    .ew-hero-content-text {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
+
+  .ew-contact-hero {
+    .ew-contact-list {
+      flex-direction: column;
+      li {
+        width: 100%;
+        a {
+          font-size: 16px;
+        }
+        &:last-child {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ew-hero {
+    min-height: 100vh;
+    & > div {
+      padding: 100px 16px 32px;
+      gap: 16px;
+      .ew-small-h1 {
+        font-size: 32px;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      p,
+      h1 {
+        max-width: 100%;
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+  .ew-projects-hero {
+    padding-top: 100px;
+    h1,
+    p {
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 48px;
+    }
+  }
+  .ew-contact-hero {
+    padding-top: 100px;
+    .ew-splited {
+      margin-top: 0 !important;
+      flex-direction: column;
+      h3,
+      .ew-first-p {
+        max-width: 100%;
+      }
+      & > *,
+      .ew-first-p {
+        width: 100% !important;
+      }
+    }
+  }
+  .ew-current-hero {
+    padding-top: 100px;
+    h1 {
+      font-size: 32px;
     }
   }
 }

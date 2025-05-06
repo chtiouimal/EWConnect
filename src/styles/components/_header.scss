@@ -1,0 +1,156 @@
+.ew-menu-drawer {
+  background: $bg-white !important;
+  .ant-drawer-header-title {
+    flex-direction: row-reverse;
+  }
+  .ant-drawer-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+      font: $small-title;
+      font-size: 2.7778vw;
+    }
+  }
+  .ew-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.208vw;
+    li {
+      a {
+        font-size: 2.208vw;
+      }
+    }
+  }
+}
+
+.ew-logo {
+  height: 3.312vw;
+  display: flex;
+  align-items: center;
+  gap: 0.5556vw;
+  img {
+    height: 3.312vw;
+    width: 3.312vw;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  p {
+    font: $logo;
+    color: #d2ac47;
+  }
+  span,
+  span:hover {
+    font: $connect;
+    color: #d2ac47;
+  }
+}
+
+.ew-navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.208vw;
+  height: 3.312vw;
+  .ew-menu-trigger {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+    height: 3.312vw;
+    width: 3.312vw;
+    border-radius: 50%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: rgba(83, 214, 186, 0.12);
+    }
+  }
+  .ew-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 4.4444vw;
+  }
+  .ew-language {
+    height: 3.312vw;
+    width: 3.312vw;
+    aspect-ratio: 1;
+    background-color: $primary-color;
+    color: $text-light;
+    font: $small-text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .ew-menu-drawer {
+    .ant-drawer-body {
+      h4 {
+        font: $small-title-res;
+        font-size: 40px;
+      }
+    }
+    .ew-menu {
+      gap: 32px;
+      li {
+        a {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .ew-logo {
+    height: 48px;
+    gap: 8px;
+    img {
+      height: 48px;
+      width: 48px;
+    }
+    p {
+      font: $logo-res;
+    }
+    span,
+    span:hover {
+      font: $connect-res;
+    }
+  }
+
+  .ew-navigation-header {
+    gap: 32px;
+    height: 48px;
+    .ew-menu-trigger {
+      height: 48px;
+      width: 48px;
+    }
+    .ew-menu {
+      gap: 64px;
+    }
+    .ew-language {
+      height: 48px;
+      width: 48px;
+      font: $small-text-res;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ew-navigation-header {
+    .ew-logo {
+      p {
+        display: none;
+      }
+    }
+    .ew-menu-trigger {
+      display: flex;
+    }
+    .ew-menu {
+      display: none !important;
+    }
+  }
+}

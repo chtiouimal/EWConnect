@@ -141,3 +141,70 @@
   .ant-upload-drag-hover:not(.ant-upload-disabled) {
   border-color: $primary-color !important;
 }
+
+@media (max-width: 1440px) {
+  .ew-input {
+    border-bottom: 1px solid rgba(70, 101, 141, 0.3);
+    padding: 8px 11px; /* was 0.556vw 0.764vw */
+    font-size: 14px !important; /* was 0.966vw */
+  }
+
+  :where(.css-dev-only-do-not-override-1v5z42l).ant-form-item
+    .ant-form-item-explain,
+  :where(.css-dev-only-do-not-override-1v5z42l).ant-form-item
+    .ant-form-item-extra {
+    font-size: 14px !important; /* was 0.966vw */
+  }
+
+  .ew-input:focus,
+  .ew-input:focus-within {
+    border-bottom: 1px solid #26b49a;
+  }
+
+  .ew-input:hover {
+    border-bottom: 1px solid #26b49a;
+  }
+
+  .ew-input.ant-input-status-error {
+    border-bottom: 1px solid #f5222d !important;
+    font-size: 14px !important; /* was 0.966vw */
+  }
+
+  .ew-input.ant-input-status-error:focus,
+  .ew-input.ant-input-status-error:focus-within {
+    border-bottom: 1px solid #f5222d !important;
+    font-size: 14px !important; /* was 0.966vw */
+  }
+
+  .ew-select .ant-select-selector {
+    border-bottom: 1px solid rgba(70, 101, 141, 0.3) !important;
+    padding: 8px 11px; /* was 0.556vw 0.764vw */
+    height: 39px !important; /* was 2.708vw */
+    font-size: 14px !important; /* was 0.966vw */
+  }
+
+  .ew-select .ant-select-selector:focus,
+  .ew-select .ant-select-selector:focus-within {
+    border-bottom: 1px solid #26b49a;
+  }
+
+  .ew-select .ant-select-selector:hover {
+    border-bottom: 1px solid #26b49a;
+  }
+
+  .ew-select .ant-select-selector.ant-select-status-error {
+    border-bottom: 1px solid #f5222d !important;
+    font-size: 14px !important; /* was 0.966vw */
+  }
+
+  .ew-select .ant-select-selector.ant-select-status-error:focus,
+  .ew-select .ant-select-selector.ant-select-status-error:focus-within {
+    border-bottom: 1px solid #f5222d !important;
+    font-size: 14px !important; /* was 0.966vw */
+  }
+
+  .ant-upload-text {
+    font: $text-res;
+    font-size: 12px; /* was 0.833vw */
+  }
+}

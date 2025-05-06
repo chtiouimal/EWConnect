@@ -61,9 +61,9 @@ function CurrentProjectView() {
 
   return (
     <div className="ew-view">
-      <section style={{ paddingTop: 160, paddingBottom: 64 }}>
+      <section className="ew-current-hero" style={{ paddingBottom: 64 }}>
         <span className="ew-special-key">August 24th - August 29th,2025</span>
-        <h1 style={{ marginTop: 16, fontSize: 64 }}>
+        <h1>
           Strategic GCC Business Delegation: An Unprecedented Multinational
           Mission to the UAE, Saudi Arabia and Qatar
         </h1>
@@ -135,7 +135,7 @@ function CurrentProjectView() {
           exclusive, high-level business delegation to the Gulf Cooperation
           Council (GCC) region,a trip unlike any before.
         </p>
-        <div className="ew-splited">
+        <div id="ew-aplication-form" className="ew-splited">
           <Form
             style={{ marginLeft: "auto", marginTop: 64 }}
             name="EWConnect"
