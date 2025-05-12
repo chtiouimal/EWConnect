@@ -14,21 +14,21 @@ function ProjectsView() {
         },
       ],
     },
-    {
-      date: "Q3 2025",
-      img: "2.jpg",
-      events: [
-        {
-          title: "Chinese Delegation to Egypt",
-          info: "Market Exploration and Bilateral Investment Opportunities",
-        },
-        {
-          title:
-            "China–GCC Strategic Delegation Mission (Qatar, Saudi Arabia, United Arab Emirates)",
-          info: "Investment and Collaboration Mission",
-        },
-      ],
-    },
+    // {
+    //   date: "Q3 2025",
+    //   img: "2.jpg",
+    //   events: [
+    //     {
+    //       title: "Chinese Delegation to Egypt",
+    //       info: "Market Exploration and Bilateral Investment Opportunities",
+    //     },
+    //     {
+    //       title:
+    //         "China–GCC Strategic Delegation Mission (Qatar, Saudi Arabia, United Arab Emirates)",
+    //       info: "Investment and Collaboration Mission",
+    //     },
+    //   ],
+    // },
     {
       date: "Q4 2025",
       img: "3.jpg",
@@ -36,6 +36,11 @@ function ProjectsView() {
         {
           title: "UAE–China AI Technology and Green Sustainability Exhibition",
           info: "Showcasing Innovation in Artificial Intelligence and Sustainable Development",
+        },
+        {
+          title:
+            "China–GCC Strategic Delegation Mission (Qatar, Saudi Arabia, United Arab Emirates)",
+          info: "Investment and Collaboration Mission",
         },
       ],
     },
