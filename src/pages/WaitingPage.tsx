@@ -38,7 +38,7 @@ function WaitingPage() {
           <img src={LOGO} alt="east-wind-connect" />
         </div>
         <h1 style={{ textAlign: "center" }}>
-          We are currently updating our website and will be back soon
+          We are currently updating our website and will be back soon.
         </h1>
         <p
           style={{
