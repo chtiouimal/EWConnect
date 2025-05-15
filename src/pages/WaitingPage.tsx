@@ -1,4 +1,5 @@
 import LOGO from "../assets/east-wind-connect.png";
+
 import { useState } from "react";
 
 function WaitingPage() {
