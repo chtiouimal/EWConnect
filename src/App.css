@@ -1949,4 +1949,38 @@ body::-webkit-scrollbar-thumb {
 body {
   background-color: #e1e4eb;
   overflow-x: hidden;
+}
+
+.ew-temp-hero {
+  max-width: 80%;
+}
+
+.ew-temp-logo {
+  height: 180px;
+  width: 180px;
+  aspect-ratio: 1;
+}
+.ew-temp-logo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  font-weight: 500;
+  color: #26b49a;
+  border-bottom: 1px solid #26b49a;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  .ew-temp-hero {
+    min-width: 90% !important;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -27,3 +27,36 @@ body {
   background-color: $bg-white;
   overflow-x: hidden;
 }
+
+.ew-temp-hero {
+  max-width: 80%;
+}
+
+.ew-temp-logo {
+  height: 180px;
+  width: 180px;
+  aspect-ratio: 1;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+a {
+  // font: $text;
+  font-weight: 500;
+  color: $primary-color;
+  border-bottom: 1px solid $primary-color;
+  width: fit-content;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  .ew-temp-hero {
+    min-width: 90% !important;
+  }
+}

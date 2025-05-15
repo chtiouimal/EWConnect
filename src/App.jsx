@@ -8,11 +8,13 @@ import {
   LandingPage,
   ProjectsPage,
 } from "./pages";
+import WaitingPage from "./pages/WaitingPage";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<EwcLayout />}>
+      <Route path="/" element={<WaitingPage />} />
+      {/* <Route path="/" element={<EwcLayout />}>
         <Route index element={<LandingPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="contact" element={<ContactPage />} />
@@ -20,7 +22,7 @@ function App() {
           <Route index element={<ProjectsPage />} />
           <Route path="current" element={<CurrentProjectPage />} />
         </Route>
-      </Route>
+      </Route> */}
     </Routes>
   );
 }
